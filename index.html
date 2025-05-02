@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"DncWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <conteiner class="Conteiner-nav">
+        <section>
+            <div id="nav">
+                <H1>DncWeather</H1>
+                <div id="end-prev">
+                    <p>Endereços</p>
+                    <p>Previsão do tempo</p>
+                </div>
+            </div>
+            <div id="nome-img">
+                <h2>
+                    Descubra Mais com Precisão:<br>
+                     Previsões do Tempo e endereços<br>
+                    em tempo real.
+                </h2>
+                <img src="./img/nuvem.svg" alt="erro">
+            </div>
+        </section>
+        <section class="box-form">
+            <div id="form">
+                <label for="inome">Primeiro Nome</label>
+                <input type="text" placeholder="Insira seu primeiro nome:" id="name">
+                <label for="ie-mail">E-mail</label>
+                <input type="email" placeholder="Insira seu e-mail" id="email">
+                <label for="iCep">CEP</label>
+                <input type="number" placeholder="Insira seu CEP" id="cep">
+            <div id="form2">
+                <label for="ilat-long">Digite sua Latitude e Longetude para saber a previsão:</label>
+                <input type="number" placeholder="Latitude" id="latitude"> <input type="number" placeholder="Longitude" id="longitude">
+            </div>
+                <button onclick="buscarInformacoes()">Acessar</button>
+            </div>
+        </section>
+        <section class="cep2">
+            <div id="local">
+                <h2>Resultado da busca por CEP:</h2>
+                <img src="./img/localizacao.svg" alt="erro">
+            </div>
+            <div id="CEP">
+                <div>
+                    <label  for="ilogradouro">Logradouro/Nome</label>
+                    <input type="text" id="logradouro">
+                </div>
+                <div>
+                    <label for="ibairro">Bairro/Distrito</label>
+                    <input type="text" id="bairro">
+                </div>
+                <div>
+                    <label for="ilocalidade">Localidade/UF</label>
+                    <input type="text" id="localidade">
+                </div>
+            </div>
+        </section>
+        <section class="prev-tempo">
+            <div id="Prev">
+                <h2>Previsão do tempo na região:</h2>
+                <img src="./img/nuvem2.svg" alt="erro">
+            </div>
+            <div id="Prev-input">
+                <p id="frase-previsao" style="font-weight: bold; color: #0C70F2; margin-bottom: 8px;"></p>  
+                <input type="text" style="border: 1px solid #0C70F2;" id="prev">         
+            </div>            
+        </section>
+    </conteiner>
+    <script src="script.js"></script>
+</body>
+</html>
